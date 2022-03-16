@@ -7,7 +7,7 @@ using Tuan4_NguyenTranDangKhoa.Models;
 
 namespace Tuan4_NguyenTranDangKhoa.Models
 {
-    public class GioHang
+    public class Giohang
     {
         MyDataDataContext data = new MyDataDataContext();
         public int masach { get; set; }
@@ -25,7 +25,7 @@ namespace Tuan4_NguyenTranDangKhoa.Models
         {
             get { return iSoluong * giaban; }
         }
-        public GioHang(int id)
+        public Giohang(int id)
         {
             masach = id;
             Sach sach = data.Saches.Single(n => n.masach == masach);
